@@ -1,6 +1,9 @@
 package com.subham.inventory_service.controller;
 
 import com.subham.inventory_service.service.InventoryService;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
@@ -17,6 +20,11 @@ public class InventoryController {
 
   private final InventoryService service;
 
+  @Operation(description = "Check if a product is in stock by providing the SKU code as a query parameter.")
+  @ApiResponses(value = {
+          @ApiResponse(responseCode = "200", description = "Inventory check successful, returns true if in stock, false otherwise"),
+          @ApiResponse(responseCode = "500", description = "Internal Server Error")
+  })
   @GetMapping("/check")
   public ResponseEntity<Boolean> isInStock(@RequestParam String skuCode) {
     try {
