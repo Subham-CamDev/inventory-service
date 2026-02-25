@@ -1,6 +1,6 @@
-package com.subham.inventory_service.repository;
+package com.subham.microservices.repository;
 
-import com.subham.inventory_service.entity.Inventory;
+import com.subham.microservices.entity.Inventory;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

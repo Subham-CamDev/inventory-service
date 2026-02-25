@@ -1,6 +1,6 @@
-package com.subham.inventory_service.service;
+package com.subham.microservices.service;
 
-import com.subham.inventory_service.repository.InventoryRepository;
+import com.subham.microservices.repository.InventoryRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

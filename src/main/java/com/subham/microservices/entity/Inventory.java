@@ -1,4 +1,4 @@
-package com.subham.inventory_service.entity;
+package com.subham.microservices.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

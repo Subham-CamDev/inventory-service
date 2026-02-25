@@ -1,4 +1,4 @@
-package com.subham.inventory_service;
+package com.subham.microservices;
 
 import org.springframework.boot.SpringApplication;
 

@@ -1,6 +1,6 @@
-package com.subham.inventory_service.controller;
+package com.subham.microservices.controller;
 
-import com.subham.inventory_service.service.InventoryService;
+import com.subham.microservices.service.InventoryService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
